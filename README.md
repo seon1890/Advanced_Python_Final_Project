@@ -11,3 +11,4 @@ The “preprocessing_GPU_MODELS_ONLY.ipynb” is our test code for running and d
 
 A final note, reading and saving data may result in errors if used outside of its original runtime environment (colab for gpu, jupyter (specifically NYU OOD) for cpu) and thus may have minor directory name errors for such tasks
 
+The dataset came from a Kaggle competition (https://www.kaggle.com/competitions/new-york-city-taxi-fare-prediction/data?select=train.csv) where we only used the train.csv dataset since the test.csv had no correct output results. The dataset is 5.7GB and its usage may be limited by your system. It is intended that the preprocessing notebook takes in and preprocesses the data first, so set/change the nrows parameter to handle the large (55M rows) dataset for your given machine/desired compute time. 5M rows seems to run well on limited devices such as free Colab with its limited RAM and GPU (if using)
